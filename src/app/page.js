@@ -26,7 +26,6 @@ export default function Home() {
           backgroundColor: "orange",
         }}
       />
-
       <HeroSection />
       <AboutSection />
       <ServiceSection />
