@@ -19,7 +19,7 @@ export default function Home() {
       loop: true,
     });
 
-    return () => typed.destroy(); // Clean up
+    return () => typed.destroy();
   }, []);
 
   return (
