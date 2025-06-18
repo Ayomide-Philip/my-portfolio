@@ -85,7 +85,8 @@ export default function Home() {
           New post
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button
+        <Link
+          href="/search"
           data-tooltip-target="tooltip-search"
           type="button"
           className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
@@ -106,7 +107,7 @@ export default function Home() {
             />
           </svg>
           <span className="sr-only">Search</span>
-        </button>
+        </Link>
         <div
           id="tooltip-search"
           role="tooltip"
@@ -115,7 +116,8 @@ export default function Home() {
           Search
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button
+        <Link
+          href="/settings"
           data-tooltip-target="tooltip-settings"
           type="button"
           className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
@@ -136,7 +138,7 @@ export default function Home() {
             />
           </svg>
           <span className="sr-only">Settings</span>
-        </button>
+        </Link>
         <div
           id="tooltip-settings"
           role="tooltip"
