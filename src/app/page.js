@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="fixed bottom-0 z-50 w-full -translate-x-1/2 left-1/2 dark:bg-black dark:border-black">
       <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-        <button
+        <Link
+          href="/"
           data-tooltip-target="tooltip-home"
           type="button"
           className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
@@ -17,7 +20,7 @@ export default function Home() {
             <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
           </svg>
           <span className="sr-only">Home</span>
-        </button>
+        </Link>
         <div
           id="tooltip-home"
           role="tooltip"
@@ -26,7 +29,8 @@ export default function Home() {
           Home
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button
+        <Link
+          href="/about"
           data-tooltip-target="tooltip-bookmark"
           type="button"
           className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
@@ -41,7 +45,7 @@ export default function Home() {
             <path d="M13 20a1 1 0 0 1-.64-.231L7 15.3l-5.36 4.469A1 1 0 0 1 0 19V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v17a1 1 0 0 1-1 1Z" />
           </svg>
           <span className="sr-only">Bookmark</span>
-        </button>
+        </Link>
         <div
           id="tooltip-bookmark"
           role="tooltip"
