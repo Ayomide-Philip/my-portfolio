@@ -17,10 +17,10 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-28 sm:py-36 bg-gradient-to-r from-green-50/50 via-teal-50 to-green-50/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-300">
+      <div className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-10 sm:py-15 bg-gradient-to-r from-green-50/50 via-teal-50 to-green-50/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-300">
         <h1 className="mx-auto max-w-5xl font-display text-5xl sm:text-7xl font-extrabold tracking-tight leading-tight text-gray-800 dark:text-white">
           Hi, I&apos;m Areo Ayomide Philip
-          <span className="relative inline-block mx-2 text-orange-600 dark:text-orange-400">
+          <span className="relative block mx-2 text-orange-600 dark:text-orange-400">
             <svg
               aria-hidden="true"
               viewBox="0 0 418 42"
@@ -47,7 +47,6 @@ export default function Home() {
           Learn More About Me
         </Link>
       </div>
-      );
     </>
   );
 }
