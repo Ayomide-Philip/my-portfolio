@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Typed from "typed.js";
 import { useEffect } from "react";
-
+import bg from "../../public/bg.jpg";
 export default function Home() {
   useEffect(() => {
     const options = {
@@ -17,9 +17,16 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-10 sm:py-15 bg-gradient-to-r from-green-50/50 via-teal-50 to-green-50/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-all duration-300">
-        <h1 className="mx-auto max-w-5xl font-display text-5xl sm:text-7xl font-extrabold tracking-tight leading-tight text-gray-800 dark:text-white">
-          Hi, I&apos;m Areo Ayomide Philip
+      <div
+        style={{
+          backgroundImage: `url(${bg.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-10 sm:py-15"
+      >
+        <h1 className="mx-auto max-w-5xl font-display text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight text-gray-800 dark:text-white">
+          Frontend Magic with Code and Creativity
           <span className="relative block mx-2 text-orange-600 dark:text-orange-400">
             <svg
               aria-hidden="true"
@@ -33,18 +40,17 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg sm:text-xl leading-relaxed text-gray-600 dark:text-gray-300">
-          I specialize in crafting clean, responsive websites that deliver
-          seamless user experiences across all devices. With a strong eye for
-          design and a focus on performance, I turn complex ideas into
-          intuitive, accessible interfaces.
+        <p className="mx-auto mt-8 max-w-2xl text-lg sm:text-xl leading-relaxed text-white">
+          I build clean, responsive interfaces that merge form and function.
+          Let&apos;s turn bold ideas into elegant digital experiences that feel
+          right on any device.
         </p>
 
         <Link
           href="/about"
           className="mt-10 inline-block rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-semibold px-6 py-3 hover:bg-orange-500 dark:hover:bg-orange-400 transition duration-300 shadow-lg"
         >
-          Learn More About Me
+          About Me
         </Link>
       </div>
     </>
