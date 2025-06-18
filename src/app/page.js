@@ -2,152 +2,37 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="fixed bottom-0 z-50 w-full -translate-x-1/2 left-1/2 dark:bg-black dark:border-black">
-      <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
+    <>
+      <div className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r from-green-50/50 via-teal-50 to-green-50/50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800">
+        <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-7xl">
+          Revolutionize Your Insurance
+          <span className="relative whitespace-nowrap text-white-600 dark:text-gray-300">
+            Operations
+          </span>
+          <span className="relative whitespace-nowrap text-orange-500 dark:text-orange-300">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 418 42"
+              className="absolute top-2/3 left-0 h-[0.58em] w-full fill-orange-500 dark:fill-orange-300/60"
+              preserveAspectRatio="none"
+            >
+              <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.780 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.540-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.810 23.239-7.825 27.934-10.149 28.304-14.005 .417-4.348-3.529-6-16.878-7.066Z"></path>
+            </svg>
+            <span className="relative">with AI</span>
+          </span>
+        </h1>
+        <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
+          Experience the future of insurance with our cutting-edge AI tool. From
+          underwriting to claims processing, our intelligent system streamlines
+          and enhances every aspect of your insurance operations.
+        </h2>
         <Link
-          href="/"
-          data-tooltip-target="tooltip-home"
-          type="button"
-          className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
-        >
-          <svg
-            className="w-5 h-5 mb-1 text-white dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
-          </svg>
-          <span className="sr-only">Home</span>
-        </Link>
-        <div
-          id="tooltip-home"
-          role="tooltip"
-          className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          Home
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
-        <Link
+          className="bg-orange-600 dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-orange-500 dark:hover:bg-gray-600 transition"
           href="/about"
-          data-tooltip-target="tooltip-bookmark"
-          type="button"
-          className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
         >
-          <svg
-            className="w-5 h-5 mb-1 text-white dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 14 20"
-          >
-            <path d="M13 20a1 1 0 0 1-.64-.231L7 15.3l-5.36 4.469A1 1 0 0 1 0 19V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v17a1 1 0 0 1-1 1Z" />
-          </svg>
-          <span className="sr-only">Bookmark</span>
+          Get started
         </Link>
-        <div
-          id="tooltip-bookmark"
-          role="tooltip"
-          className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          Bookmark
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
-        <Link
-          href="/#"
-          data-tooltip-target="tooltip-post"
-          type="button"
-          className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
-        >
-          <svg
-            className="w-5 h-5 mb-1 text-white dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 1v16M1 9h16"
-            />
-          </svg>
-          <span className="sr-only">New post</span>
-        </Link>
-        <div
-          id="tooltip-post"
-          role="tooltip"
-          className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          New post
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
-        <Link
-          href="/search"
-          data-tooltip-target="tooltip-search"
-          type="button"
-          className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
-        >
-          <svg
-            className="w-5 h-5 mb-1 text-white dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 20 20"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-            />
-          </svg>
-          <span className="sr-only">Search</span>
-        </Link>
-        <div
-          id="tooltip-search"
-          role="tooltip"
-          className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          Search
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
-        <Link
-          href="/settings"
-          data-tooltip-target="tooltip-settings"
-          type="button"
-          className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
-        >
-          <svg
-            className="w-5 h-5 mb-1 text-white dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 20 20"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
-            />
-          </svg>
-          <span className="sr-only">Settings</span>
-        </Link>
-        <div
-          id="tooltip-settings"
-          role="tooltip"
-          className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          Settings
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
       </div>
-    </div>
+    </>
   );
 }
