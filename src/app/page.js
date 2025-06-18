@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     const options = {
-      strings: ["Frontend Developer.", "React Enthusiast", "UI Perfectionist"],
+      strings: ["Frontend Developer.", "React Enthusiast.", "Next JS Lover."],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1000,
