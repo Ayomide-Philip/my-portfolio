@@ -54,7 +54,8 @@ export default function Home() {
           Bookmark
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button
+        <Link
+          href="/#"
           data-tooltip-target="tooltip-post"
           type="button"
           className="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group"
@@ -75,7 +76,7 @@ export default function Home() {
             />
           </svg>
           <span className="sr-only">New post</span>
-        </button>
+        </Link>
         <div
           id="tooltip-post"
           role="tooltip"
