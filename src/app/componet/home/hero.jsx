@@ -37,7 +37,16 @@ export default function HeroSection() {
         transition={{ delay: 0.4, duration: 0.8 }}
         className="text-white text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight max-w-5xl"
       >
-        Frontend Magic with Code and Creativity
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+          }}
+        >
+          Frontend Magic with Code and Creativity
+        </motion.div>
         <span className="block mt-2 text-orange-400 text-xl sm:text-2xl font-semibold">
           <span ref={typedEl} className="typed-text" />
         </span>
