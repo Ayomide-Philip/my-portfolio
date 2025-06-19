@@ -13,7 +13,7 @@ export default function Home() {
     restDelta: 0.001,
   });
   return (
-    <div className="pb-10">
+    <>
       <motion.div
         id="scroll-indicator"
         style={{
@@ -31,6 +31,6 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <Skills />
-    </div>
+    </>
   );
 }

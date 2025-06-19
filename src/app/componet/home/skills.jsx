@@ -2,26 +2,16 @@ export default function Skills() {
   return (
     <section className="min-h-screen w-full  md:px-8 xl:px-20 text-white dark:bg-gray-950  flex items-center">
       <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
-        <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
-          <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
-            <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
-              Explore My Expertise & Tech Stack
-            </h2>
-          </div>
+        <div className="w-full md:w-1/2 relative p-6 sm:px-10 md:p-0">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
+            Explore My Expertise & Tech Stack
+          </h2>
 
-          <p className="p-3 text-gray-400 text-sm leading-relaxed">
+          <p className="p-3  text-white leading-relaxed">
             These are the tools and technologies that I use daily to develop web
             applications. With a strong foundation in frontend, I focus on
             delivering clean, maintainable code and intuitive user experiences.
           </p>
-          <span className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
-            <button className="rounded-lg px-4 py-2 bg-blue-500 text-white transition-all duration-300">
-              Skills
-            </button>
-            <button className="rounded-lg px-4 py-2 bg-transparent text-gray-300 transition-all duration-300">
-              Tools
-            </button>
-          </span>
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center">
@@ -189,7 +179,7 @@ export default function Skills() {
                         fill="#FF2D20"
                         fillRule="evenodd"
                         d="M215.846 78.314q.097.366.098.747v39.199c0 .503-.131.997-.379 1.432a2.84 2.84 0 0 1-1.037 1.047l-32.446 18.942v37.545a2.87 2.87 0 0 1-1.409 2.48l-67.728 39.535c-.155.089-.324.146-.493.207c-.064.022-.123.061-.19.079a2.8 2.8 0 0 1-1.445 0c-.077-.022-.148-.065-.222-.093c-.155-.057-.317-.107-.465-.193l-67.714-39.535a2.85 2.85 0 0 1-1.036-1.047a2.9 2.9 0 0 1-.38-1.433V59.629q.002-.387.099-.75c.02-.083.07-.158.098-.24c.053-.15.102-.303.18-.443c.053-.093.13-.168.194-.253c.08-.115.155-.233.25-.333c.08-.082.187-.143.278-.214c.102-.086.194-.179.31-.247h.004L76.27 37.382a2.8 2.8 0 0 1 2.819 0l33.859 19.767h.007c.112.072.208.161.31.243c.091.072.193.136.274.215c.099.103.17.221.254.336c.06.085.141.16.19.253c.081.143.127.293.184.443c.028.082.077.157.098.243q.097.367.099.747v73.45l28.214-16.473v-37.55c0-.25.035-.503.099-.742c.025-.086.07-.161.099-.243c.056-.15.105-.304.183-.443c.053-.093.13-.168.19-.254c.085-.114.155-.232.254-.332c.081-.082.183-.143.275-.215c.105-.085.197-.178.31-.246h.004l33.862-19.768a2.79 2.79 0 0 1 2.818 0l33.859 19.768c.12.072.211.16.317.243c.088.071.19.136.271.214c.099.104.169.222.254.336c.063.086.141.16.19.254c.081.14.127.293.183.443c.032.082.078.157.099.243m-5.546 38.292V84.009l-11.849 6.916l-16.369 9.557v32.597l28.221-16.473zm-33.859 58.966v-32.618l-16.101 9.325l-45.979 26.609v32.925zM46.644 64.577v110.995l62.073 36.238v-32.919l-32.428-18.61l-.01-.007l-.015-.007c-.109-.064-.2-.157-.303-.236c-.088-.071-.19-.128-.267-.207l-.007-.01c-.092-.09-.156-.2-.233-.301c-.07-.096-.155-.178-.211-.278l-.004-.011c-.064-.107-.103-.236-.148-.357c-.046-.107-.106-.207-.134-.322v-.004c-.035-.135-.042-.278-.057-.418c-.014-.107-.042-.214-.042-.321V81.051L58.493 71.49l-11.849-6.91zm31.04-21.415L49.474 59.63l28.203 16.466l28.207-16.47l-28.207-16.463zm14.671 102.764l16.366-9.553V64.577l-11.85 6.917l-16.368 9.556v71.797zm86.909-83.332l-28.208 16.467l28.208 16.466l28.203-16.47zm-2.823 37.888l-16.369-9.557l-11.848-6.916v32.597l16.365 9.553l11.852 6.92zm-64.905 73.458l41.373-23.952l20.682-11.968l-28.186-16.456l-32.453 18.946l-29.578 17.267z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </g>
                   </svg>{" "}
@@ -213,7 +203,7 @@ export default function Skills() {
                         fill="url(#skillIconsTailwindcssDark0)"
                         fillRule="evenodd"
                         d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                       <defs>
                         <linearGradient
@@ -224,8 +214,8 @@ export default function Skills() {
                           y2="185.5"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#32B1C1" />
-                          <stop offset="1" stop-color="#14C6B7" />
+                          <stop stopColor="#32B1C1" />
+                          <stop offset="1" stopColor="#14C6B7" />
                         </linearGradient>
                       </defs>
                     </g>
@@ -254,13 +244,13 @@ export default function Skills() {
                         fill="#F90"
                         fillRule="evenodd"
                         d="M207.837 162.816c-21.645 15.987-53.092 24.474-80.132 24.474c-37.894 0-72.04-14.014-97.829-37.303c-2.04-1.842-.197-4.342 2.237-2.895c27.895 16.184 62.303 25.987 97.895 25.987c24.013 0 50.395-5 74.671-15.263c3.618-1.645 6.71 2.368 3.158 5"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                       <path
                         fill="#F90"
                         fillRule="evenodd"
                         d="M216.85 152.553c-2.763-3.553-18.289-1.711-25.329-.856c-2.105.264-2.434-1.579-.526-2.96c12.368-8.684 32.697-6.184 35.066-3.29c2.368 2.961-.658 23.29-12.237 33.027c-1.777 1.513-3.487.723-2.698-1.25c2.632-6.513 8.487-21.185 5.724-24.671"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </g>
                   </svg>
@@ -280,7 +270,7 @@ export default function Skills() {
                   >
                     <g fill="none">
                       <rect width="256" height="256" fill="#F03C2E" rx="60" />
-                      <g clip-path="url(#skillIconsGit0)">
+                      <g clipPath="url(#skillIconsGit0)">
                         <path
                           fill="#fff"
                           d="m224.225 119.094l-87.319-87.319a12.87 12.87 0 0 0-14.035-2.793a12.9 12.9 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.31 15.31 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.32 15.32 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.6 15.6 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.32 15.32 0 0 1-3.326-16.704a15.3 15.3 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.2 15.2 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.814l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.9 12.9 0 0 0 2.795 4.179l87.325 87.312a12.9 12.9 0 0 0 4.177 2.793a12.9 12.9 0 0 0 9.858 0a12.9 12.9 0 0 0 4.177-2.793l86.919-86.781a12.88 12.88 0 0 0 3.776-9.109a12.88 12.88 0 0 0-3.776-9.11"
@@ -309,7 +299,7 @@ export default function Skills() {
                   >
                     <g fill="none">
                       <rect width="256" height="256" fill="#242938" rx="60" />
-                      <g clip-path="url(#skillIconsFigmaDark0)">
+                      <g clipPath="url(#skillIconsFigmaDark0)">
                         <path
                           fill="#0ACF83"
                           d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228"
@@ -362,13 +352,13 @@ export default function Skills() {
                         fill="#F90"
                         fillRule="evenodd"
                         d="M207.837 162.816c-21.645 15.987-53.092 24.474-80.132 24.474c-37.894 0-72.04-14.014-97.829-37.303c-2.04-1.842-.197-4.342 2.237-2.895c27.895 16.184 62.303 25.987 97.895 25.987c24.013 0 50.395-5 74.671-15.263c3.618-1.645 6.71 2.368 3.158 5"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                       <path
                         fill="#F90"
                         fillRule="evenodd"
                         d="M216.85 152.553c-2.763-3.553-18.289-1.711-25.329-.856c-2.105.264-2.434-1.579-.526-2.96c12.368-8.684 32.697-6.184 35.066-3.29c2.368 2.961-.658 23.29-12.237 33.027c-1.777 1.513-3.487.723-2.698-1.25c2.632-6.513 8.487-21.185 5.724-24.671"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </g>
                   </svg>{" "}
