@@ -28,9 +28,11 @@ export default function Home() {
         }}
       />
       <HeroSection />
-      <AboutSection />
-      <ServiceSection />
-      <Skills />
+      <div className=" bg-gray-950 pb-20 sm:pb-10">
+        <AboutSection />
+        <ServiceSection />
+        <Skills />
+      </div>
     </>
   );
 }

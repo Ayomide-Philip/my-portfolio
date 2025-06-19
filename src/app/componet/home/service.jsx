@@ -75,7 +75,7 @@ const fadeIn = {
 
 export default function ServiceSection() {
   return (
-    <div className="w-full px-4 md:px-10 py-16 bg-[#111111] dark:bg-white rounded-2xl">
+    <div className="w-full px-4 md:px-10 py-16 bg-[#111111] dark:bg-white">
       <div className="mb-10">
         <h2 className="text-3xl font-bold text-white dark:text-black">
           What I Do
