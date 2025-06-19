@@ -14,7 +14,7 @@ export default function AboutSection() {
         >
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
             <img
-              src="https://picsum.photos/200"
+              src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
               alt="Profile"
               className="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-2xl shadow-2xl border-4 border-orange-500 dark:border-orange-400"
             />
