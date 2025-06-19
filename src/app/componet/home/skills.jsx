@@ -8,7 +8,7 @@ const containerVariants = {
     transition: {
       duration: 1,
       when: "beforeChildren",
-      staggerChildren: 0.3,
+      staggerChildren: 0.3, // Stagger child animations
     },
   },
 };
@@ -23,8 +23,9 @@ export default function Skills() {
     <motion.section
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
-      className="min-h-screen w-full px-4 sm:px-8 xl:px-20 text-gray-900 dark:text-white bg-white dark:bg-gray-950 flex items-center justify-center"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.25 }}
+      className="p-28 w-full px-4 sm:px-8 xl:px-20 text-gray-900 dark:text-white bg-white dark:bg-gray-950 flex items-center justify-center"
     >
       <motion.div
         variants={containerVariants}
@@ -51,10 +52,7 @@ export default function Skills() {
           </motion.p>
         </motion.div>
 
-        <motion.div
-          variants={itemVariants}
-          className="w-full md:w-1/2 flex justify-center items-center"
-        >
+        <motion.div className="w-full md:w-1/2 flex justify-center items-center">
           <SkillImage />
         </motion.div>
       </motion.div>
