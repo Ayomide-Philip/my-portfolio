@@ -48,7 +48,7 @@ const project = [
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/Ayomide-Philip/DevSpace/main/frontend/public/images/logo.png",
+      "https://github.com/Ayomide-Philip/DevSpace/blob/main/Screenshot%202025-05-25%20184725.png?raw=true",
     name: "DevSpace",
     description:
       "A community platform built with React for collaboration, chat, and developer interactions.",
