@@ -52,7 +52,7 @@ export default function ContactPage() {
           </motion.p>
 
           <motion.div className="relative mb-4" variants={fadeIn}>
-            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="email" className="leading-7 text-sm text-black">
               Email
             </label>
             <input
@@ -64,10 +64,7 @@ export default function ContactPage() {
           </motion.div>
 
           <motion.div className="relative mb-4" variants={fadeIn}>
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-600"
-            >
+            <label htmlFor="message" className="leading-7 text-sm text-black">
               Message
             </label>
             <textarea
