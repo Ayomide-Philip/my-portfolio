@@ -8,7 +8,7 @@ const containerVariants = {
     transition: {
       duration: 1,
       when: "beforeChildren",
-      staggerChildren: 0.3, // Stagger child animations
+      staggerChildren: 0.3, 
     },
   },
 };
@@ -44,7 +44,7 @@ export default function Skills() {
 
           <motion.p
             variants={itemVariants}
-            className="mt-4 text-base leading-relaxed text-gray-700 dark:text-gray-300"
+            className="mt-4 text-base leading-relaxed text-gray-300"
           >
             These are the tools and technologies I use daily to develop modern
             web applications. With a solid frontend foundation, I strive for
