@@ -28,15 +28,6 @@ const project = [
     tag: ["React", "Community"],
     url: "https://github.com/Ayomide-Philip/DevSpace",
   },
-  {
-    imageUrl:
-      "https://raw.githubusercontent.com/Ayomide-Philip/CyberAPI/main/public/logo.png", // placeholder
-    name: "CyberAPI",
-    description:
-      "An EJS‑powered API project focused on cybersecurity data and endpoints.",
-    tag: ["EJS", "API", "Cybersecurity"],
-    url: "https://github.com/Ayomide-Philip/CyberAPI",
-  },
 ];
 
 export default function ProjectSection() {
@@ -47,7 +38,7 @@ export default function ProjectSection() {
           <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
             Our Projects
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+          <p className="mx-auto mt-3 max-w-2xl text-xl text-black sm:mt-4">
             Check out some of our recent work and case studies.
           </p>
         </div>
@@ -76,16 +67,12 @@ export default function ProjectSection() {
                       return (
                         <span
                           key={tag}
-                          className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800"
+                          className="rounded-full bg-orange-500 px-3 py-1 text-xs font-medium text-white"
                         >
                           {tag}
                         </span>
                       );
                     })}
-
-                    <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800">
-                      UX
-                    </span>
                   </div>
                   <Link
                     href={url}
