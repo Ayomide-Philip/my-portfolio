@@ -45,15 +45,15 @@ const navItems = [
     ),
   },
   {
-    href: "/settings",
-    label: "Settings",
+    href: "/projects",
+    label: "Projects",
     icon: (
       <path
         stroke="currentColor"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth="2"
-        d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+        d="M3 3h18v4H3zM3 9h18v4H3zM3 15h18v4H3z"
       />
     ),
   },
