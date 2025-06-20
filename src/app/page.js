@@ -5,6 +5,7 @@ import HeroSection from "./componet/home/hero";
 import ServiceSection from "./componet/home/service";
 import Skills from "./componet/home/skills";
 import ContactPage from "./componet/home/contactPage";
+import ProjectSection from "./componet/home/project";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -29,12 +30,11 @@ export default function Home() {
         }}
       />
       <HeroSection />
-      <div className=" bg-gray-950 pb-20 sm:pb-10">
-        <AboutSection />
-        <ServiceSection />
-        <Skills />
-        <ContactPage />
-      </div>
+      <AboutSection />
+      <ServiceSection />
+      <Skills />
+      <ProjectSection />
+      <ContactPage />
     </>
   );
 }

@@ -11,7 +11,7 @@ const fadeIn = {
 
 export default function ContactPage() {
   return (
-    <section className="text-gray-600 body-font relative bg-white">
+    <section className="text-gray-600 body-font relative  ">
       <motion.div
         className="absolute inset-0 bg-gray-300"
         initial={{ opacity: 0 }}
