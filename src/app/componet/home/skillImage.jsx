@@ -10,7 +10,6 @@ import { FaReact, FaNode } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 
-// Array of icons with labels and colors
 const iconDetails = [
   { iconCode: FaHtml5, color: "#E34F26", label: "HTML5" },
   { iconCode: FaCss3Alt, color: "#1572B6", label: "CSS3" },
