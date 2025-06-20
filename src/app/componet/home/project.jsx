@@ -100,7 +100,7 @@ export default function ProjectSection() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
-                <p className="mt-2 text-gray-600">{description}</p>
+                <p className="mt-2 text-black">{description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {tag.map((tag) => (
                     <span
