@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function ProjectSection() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:px-8 bg-white">
@@ -13,9 +14,9 @@ export default function ProjectSection() {
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 hover:scale-105">
-            <div className="h-48 overflow-hidden bg-blue-500">
+            <div className="h-48 overflow-hidden">
               <img
-                src="https://placehold.co/600x400/transparent/FFF"
+                src="https://github.com/Ayomide-Philip/DevSpace/blob/main/frontend/public/images/logo.png?raw=true"
                 alt="Project 1"
                 className="h-full w-full object-cover"
               />
@@ -48,9 +49,9 @@ export default function ProjectSection() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
               </a>
@@ -93,9 +94,9 @@ export default function ProjectSection() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
               </a>
@@ -138,9 +139,9 @@ export default function ProjectSection() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
               </a>
@@ -149,13 +150,12 @@ export default function ProjectSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="#"
-            className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700"
+            className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-700"
           >
-            {" "}
-            View all projects{" "}
-          </a>
+            View all projects
+          </Link>
         </div>
       </div>
     </section>
