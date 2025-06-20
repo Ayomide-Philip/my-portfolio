@@ -16,7 +16,7 @@ function LoadingThreeDotsJumping() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex items-center justify-center h-screen bg-gray-950">
       <motion.div
         animate="jump"
         transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
