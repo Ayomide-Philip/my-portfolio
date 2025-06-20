@@ -26,7 +26,14 @@ const cardVariants = {
     },
   },
 };
-
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: 1.2 },
+  },
+};
 const project = [
   {
     imageUrl:
@@ -58,6 +65,7 @@ const project = [
 ];
 
 export default function ProjectSection() {
+  const MotionLink = motion.create(Link);
   return (
     <motion.section
       className="px-4 py-12 sm:px-6 lg:px-8 bg-white"
@@ -69,10 +77,10 @@ export default function ProjectSection() {
       <motion.div className="mx-auto max-w-7xl" variants={cardVariants}>
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
-            Our Projects
+            My Projects
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-xl text-black sm:mt-4">
-            Check out some of our recent work and case studies.
+            Check out some of my recent work and case studies.
           </p>
         </div>
 
@@ -105,6 +113,7 @@ export default function ProjectSection() {
                 </div>
                 <Link
                   href={url}
+                  target="_blank"
                   className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800"
                 >
                   View case study
@@ -126,13 +135,20 @@ export default function ProjectSection() {
           ))}
         </div>
 
-        <motion.div className="mt-12 text-center" variants={cardVariants}>
-          <Link
-            href="#"
-            className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-700"
+        <motion.div
+          className="mt-12 text-center"
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+        >
+          <MotionLink
+            href="/project"
+            className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             View all projects
-          </Link>
+          </MotionLink>
         </motion.div>
       </motion.div>
     </motion.section>
