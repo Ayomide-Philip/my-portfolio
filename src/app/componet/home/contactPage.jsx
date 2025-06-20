@@ -83,7 +83,7 @@ export default function ContactPage() {
             whileTap={{ scale: 0.95 }}
             variants={fadeIn}
           >
-            Button
+            Message
           </motion.button>
         </motion.div>
       </div>
