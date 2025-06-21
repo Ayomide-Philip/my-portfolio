@@ -10,10 +10,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import getIpAddress, { getLocation } from "@/lib/getIP";
-
 const ip = await getIpAddress();
 const location = await getLocation(ip);
-console.log(location);
 
 export default function LetConnect() {
   return (
@@ -32,7 +30,7 @@ export default function LetConnect() {
           </span>
           <div>
             <h3 className="text-lg font-semibold">Location:</h3>
-            <p className="text-white">Lucknow, UP, India</p>
+            <p className="text-white">{`${location.city},${location.region}, ${location.country}`}</p>
           </div>
         </div>
 
