@@ -32,18 +32,19 @@ const navItems = [
     ),
   },
   {
-    href: "/search",
-    label: "Search",
+    href: "/contact",
+    label: "Contact",
     icon: (
       <path
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"
       />
     ),
   },
+
   {
     href: "/projects",
     label: "Projects",

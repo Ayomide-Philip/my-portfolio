@@ -109,7 +109,7 @@ export default function AboutPage() {
         </motion.div>
 
         <motion.h2
-          className="text-3xl font-bold mt-16 mb-8 text-lime-400 drop-shadow-[0_0_6px_#0f0]"
+          className="text-3xl font-bold mt-16 mb-8 text-orange-400 "
           variants={itemVariants}
         >
           🛠️ My Codeing Skill
