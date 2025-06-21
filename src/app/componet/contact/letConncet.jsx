@@ -1,6 +1,3 @@
-"use client";
-import axios from "axios";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   FaMapMarkerAlt,
@@ -11,20 +8,12 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
-
-async function getIpAddress() {
-  try {
-    const response = await axios.get("https://api.ipify.org/?format=json");
-    return response.data.ip;
-  } catch (error) {
-    console.log(error);
-  }
-}
+import getIpAddress from "@/lib/getIP";
 
 const ip = await getIpAddress();
+console.log(ip);
 
 export default function LetConnect() {
-  const MotionLink = motion.create(Link);
   return (
     <div>
       <h2 className="text-4xl font-extrabold mb-6">
@@ -35,12 +24,7 @@ export default function LetConnect() {
         ideas and opportunities.
       </p>
       <div className="space-y-6">
-        <motion.div
-          className="flex items-start"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="flex items-start">
           <span className="bg-amber-600 p-2 rounded-full mr-4">
             <FaMapMarkerAlt className="w-5 h-5" />
           </span>
@@ -48,14 +32,9 @@ export default function LetConnect() {
             <h3 className="text-lg font-semibold">Location:</h3>
             <p className="text-white">Lucknow, UP, India</p>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex items-start"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
+        <div className="flex items-start">
           <span className="bg-amber-500 p-2 rounded-full mr-4">
             <FaPhoneAlt className="w-5 h-5" />
           </span>
@@ -63,14 +42,9 @@ export default function LetConnect() {
             <h3 className="text-lg font-semibold">Phone:</h3>
             <p className="text-white">+91 9876543210</p>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex items-start"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
+        <div className="flex items-start">
           <span className="bg-amber-500 p-2 rounded-full mr-4">
             <FaEnvelope className="w-5 h-5" />
           </span>
@@ -78,7 +52,7 @@ export default function LetConnect() {
             <h3 className="text-lg font-semibold">Email:</h3>
             <p className="text-white">kuldeepprajapati2111@gmail.com</p>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       <div className="mt-10 flex space-x-4">
@@ -105,7 +79,7 @@ export default function LetConnect() {
           },
         ].map(({ link, label, icon: Icon }) => {
           return (
-            <MotionLink
+            <Link
               key={label}
               href={link}
               target="_blank"
@@ -116,7 +90,7 @@ export default function LetConnect() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Icon className="text-lg" />
-            </MotionLink>
+            </Link>
           );
         })}
       </div>
