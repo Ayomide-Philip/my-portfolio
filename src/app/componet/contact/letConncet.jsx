@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -10,6 +11,18 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+
+async function getIpAddress() {
+  try {
+    const response = await axios.get("https://api.ipify.org/?format=json");
+    return response.data.ip;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+const ip = await getIpAddress();
+
 export default function LetConnect() {
   const MotionLink = motion.create(Link);
   return (
