@@ -11,7 +11,6 @@ import { FaReact, FaNode } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 
-// Skill Icons
 const skills = [
   { iconCode: FaHtml5, color: "#E34F26", label: "HTML5" },
   { iconCode: FaCss3Alt, color: "#1572B6", label: "CSS3" },
@@ -99,10 +98,10 @@ export default function AboutPage() {
           transition={{ delay: 0.6, duration: 0.6 }}
         >
           <span className="bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow shadow-pink-400">
-            🚀 Frontend Avenger
+            🚀 Frontend Developer
           </span>
           <span className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow shadow-blue-400">
-            ⚔️ UX Slicer
+            ⚔️ Responsive Designer
           </span>
           <span className="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow shadow-green-400">
             🧠 Logic Tactician
