@@ -29,8 +29,8 @@ export default function LetConnect() {
             <FaMapMarkerAlt className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Location:</h3>
-            <p className="text-white">{`${location.city},${location.region}, ${location.country}`}</p>
+            <h3 className="text-lg font-semibold">Your Location:</h3>
+            <p className="text-white">{`${location.city}, ${location.region}, ${location.country}.`}</p>
           </div>
         </div>
 
