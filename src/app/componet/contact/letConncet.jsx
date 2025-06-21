@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -10,6 +11,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 export default function LetConnect() {
+  const MotionLink = motion.create(Link);
   return (
     <div>
       <h2 className="text-4xl font-extrabold mb-6">
@@ -67,7 +69,24 @@ export default function LetConnect() {
       </div>
 
       <div className="mt-10 flex space-x-4">
-        <motion.a
+        {[{ link: "#", label: "Facebook", icon: FaFacebookF }].map(
+          ({ link, label, icon: Icon }) => {
+            return (
+              <MotionLink
+                key={label}
+                href={link}
+                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
+                aria-label={label}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <Icon className="text-lg" />
+              </MotionLink>
+            );
+          }
+        )}
+        {/* <motion.a
           href="#"
           className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
           aria-label="Facebook"
@@ -106,7 +125,7 @@ export default function LetConnect() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <FaLinkedinIn className="text-lg" />
-        </motion.a>
+        </motion.a> */}
       </div>
     </div>
   );
