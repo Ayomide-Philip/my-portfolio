@@ -75,9 +75,21 @@ export default function LetConnect() {
             label: "Facebook",
             icon: FaFacebookF,
           },
-          { link: "#", label: "Instagram", icon: FaInstagram },
-          { link: "#", label: "Twitter", icon: FaTwitter },
-          { link: "#", label: "Github", icon: FaGithub },
+          {
+            link: "https://www.instagram.com/ayomide.philip.1379/",
+            label: "Instagram",
+            icon: FaInstagram,
+          },
+          {
+            link: "https://x.com/areo_ayomi70157",
+            label: "Twitter",
+            icon: FaTwitter,
+          },
+          {
+            link: "https://github.com/Ayomide-Philip",
+            label: "Github",
+            icon: FaGithub,
+          },
         ].map(({ link, label, icon: Icon }) => {
           return (
             <MotionLink
