@@ -2,18 +2,18 @@
 import Link from "next/link";
 import {
   FaMapMarkerAlt,
-  FaPhoneAlt,
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
   FaTwitter,
   FaGithub,
+  FaUser,
 } from "react-icons/fa";
 import getIpAddress, { getLocation } from "@/lib/getIP";
 const ip = await getIpAddress();
 const location = await getLocation(ip);
 
-export default function LetConnect() {
+export default function LetConnect({ name, emailAddress }) {
   return (
     <div>
       <h2 className="text-4xl font-extrabold mb-6">
@@ -36,11 +36,11 @@ export default function LetConnect() {
 
         <div className="flex items-start">
           <span className="bg-amber-500 p-2 rounded-full mr-4">
-            <FaPhoneAlt className="w-5 h-5" />
+            <FaUser className="w-5 h-5" />
           </span>
           <div>
             <h3 className="text-lg font-semibold">Your Name:</h3>
-            <p className="text-white">Thony Stone</p>
+            <p className="text-white">{name === null ? "Thony Stone" : name}</p>
           </div>
         </div>
 
@@ -50,7 +50,9 @@ export default function LetConnect() {
           </span>
           <div>
             <h3 className="text-lg font-semibold">Your Email:</h3>
-            <p className="text-white">kuldeepprajapati2111@gmail.com</p>
+            <p className="text-white">
+              {emailAddress === null ? "thonystone@gmail.com" : emailAddress}
+            </p>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-export default function FormSection() {
+export default function FormSection({ setName, setEmailAddress }) {
   return (
     <div className="bg-gray-800 p-8 rounded-2xl shadow-xl">
       <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
@@ -10,8 +10,12 @@ export default function FormSection() {
           <input
             type="text"
             id="name"
+            name="name"
             className="w-full px-4 py-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
             placeholder="Enter your name"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
           />
         </div>
 
@@ -22,8 +26,12 @@ export default function FormSection() {
           <input
             type="email"
             id="email"
+            name="email"
             className="w-full px-4 py-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
             placeholder="Enter your email"
+            onChange={(e) => {
+              setEmailAddress(e.target.value);
+            }}
           />
         </div>
 
