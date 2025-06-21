@@ -8,7 +8,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
-  FaLinkedinIn,
+  FaGithub,
 } from "react-icons/fa";
 export default function LetConnect() {
   const MotionLink = motion.create(Link);
@@ -69,63 +69,26 @@ export default function LetConnect() {
       </div>
 
       <div className="mt-10 flex space-x-4">
-        {[{ link: "#", label: "Facebook", icon: FaFacebookF }].map(
-          ({ link, label, icon: Icon }) => {
-            return (
-              <MotionLink
-                key={label}
-                href={link}
-                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
-                aria-label={label}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <Icon className="text-lg" />
-              </MotionLink>
-            );
-          }
-        )}
-        {/* <motion.a
-          href="#"
-          className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
-          aria-label="Facebook"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
-          <FaFacebookF className="text-lg" />
-        </motion.a>
-        <motion.a
-          href="#"
-          className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
-          aria-label="Instagram"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <FaInstagram className="text-lg" />
-        </motion.a>
-        <motion.a
-          href="#"
-          className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
-          aria-label="Twitter"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <FaTwitter className="text-lg" />
-        </motion.a>
-        <motion.a
-          href="#"
-          className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
-          aria-label="LinkedIn"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <FaLinkedinIn className="text-lg" />
-        </motion.a> */}
+        {[
+          { link: "#", label: "Facebook", icon: FaFacebookF },
+          { link: "#", label: "Instagram", icon: FaInstagram },
+          { link: "#", label: "Twitter", icon: FaTwitter },
+          { link: "#", label: "Github", icon: FaGithub },
+        ].map(({ link, label, icon: Icon }) => {
+          return (
+            <MotionLink
+              key={label}
+              href={link}
+              className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
+              aria-label={label}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <Icon className="text-lg" />
+            </MotionLink>
+          );
+        })}
       </div>
     </div>
   );
