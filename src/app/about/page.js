@@ -112,7 +112,7 @@ export default function AboutPage() {
           className="text-3xl font-bold mt-16 mb-8 text-lime-400 drop-shadow-[0_0_6px_#0f0]"
           variants={itemVariants}
         >
-          🛠️ My Skill Arsenal
+          🛠️ My Codeing Skill
         </motion.h2>
 
         <motion.div
