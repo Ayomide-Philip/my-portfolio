@@ -70,7 +70,11 @@ export default function LetConnect() {
 
       <div className="mt-10 flex space-x-4">
         {[
-          { link: "#", label: "Facebook", icon: FaFacebookF },
+          {
+            link: "https://web.facebook.com/ayo.areo.90",
+            label: "Facebook",
+            icon: FaFacebookF,
+          },
           { link: "#", label: "Instagram", icon: FaInstagram },
           { link: "#", label: "Twitter", icon: FaTwitter },
           { link: "#", label: "Github", icon: FaGithub },
@@ -79,6 +83,7 @@ export default function LetConnect() {
             <MotionLink
               key={label}
               href={link}
+              target="_blank"
               className="w-10 h-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition-colors"
               aria-label={label}
               initial={{ opacity: 0 }}
