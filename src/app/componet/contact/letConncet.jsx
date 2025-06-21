@@ -39,8 +39,8 @@ export default function LetConnect() {
             <FaPhoneAlt className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Phone:</h3>
-            <p className="text-white">+91 9876543210</p>
+            <h3 className="text-lg font-semibold">Your Name:</h3>
+            <p className="text-white">Thony Stone</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export default function LetConnect() {
             <FaEnvelope className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Email:</h3>
+            <h3 className="text-lg font-semibold">Your Email:</h3>
             <p className="text-white">kuldeepprajapati2111@gmail.com</p>
           </div>
         </div>
