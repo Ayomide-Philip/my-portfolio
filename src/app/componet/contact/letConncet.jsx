@@ -32,7 +32,7 @@ export default function LetConnect() {
             <FaMapMarkerAlt className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Location</h3>
+            <h3 className="text-lg font-semibold">Location:</h3>
             <p className="text-white">Lucknow, UP, India</p>
           </div>
         </motion.div>
@@ -47,7 +47,7 @@ export default function LetConnect() {
             <FaPhoneAlt className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Phone</h3>
+            <h3 className="text-lg font-semibold">Phone:</h3>
             <p className="text-white">+91 9876543210</p>
           </div>
         </motion.div>
@@ -62,7 +62,7 @@ export default function LetConnect() {
             <FaEnvelope className="w-5 h-5" />
           </span>
           <div>
-            <h3 className="text-lg font-semibold">Email</h3>
+            <h3 className="text-lg font-semibold">Email:</h3>
             <p className="text-white">kuldeepprajapati2111@gmail.com</p>
           </div>
         </motion.div>
