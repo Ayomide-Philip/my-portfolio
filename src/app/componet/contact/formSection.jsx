@@ -1,11 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
 export default function FormSection() {
   return (
     <div className="bg-gray-800 p-8 rounded-2xl shadow-xl">
       <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
       <form className="space-y-6">
-        
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             Name

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
   FaMapMarkerAlt,
@@ -8,10 +9,11 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
-import getIpAddress from "@/lib/getIP";
+import getIpAddress, { getLocation } from "@/lib/getIP";
 
 const ip = await getIpAddress();
-console.log(ip);
+const location = await getLocation(ip);
+console.log(location);
 
 export default function LetConnect() {
   return (
