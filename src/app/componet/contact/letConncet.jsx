@@ -40,9 +40,7 @@ export default function LetConnect({ name, emailAddress }) {
           </span>
           <div>
             <h3 className="text-lg font-semibold">Your Name:</h3>
-            <p className="text-white">
-              {name === null || undefined ? "Thony Stone" : name}
-            </p>
+            <p className="text-white">{!name ? "Thony Stone" : name}</p>
           </div>
         </div>
 
@@ -53,7 +51,7 @@ export default function LetConnect({ name, emailAddress }) {
           <div>
             <h3 className="text-lg font-semibold">Your Email:</h3>
             <p className="text-white">
-              {emailAddress === null ? "thonystone@gmail.com" : emailAddress}
+              {!emailAddress ? "thonystone@gmail.com" : emailAddress}
             </p>
           </div>
         </div>
