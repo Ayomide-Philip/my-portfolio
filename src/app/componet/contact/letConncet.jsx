@@ -9,11 +9,20 @@ import {
   FaGithub,
   FaUser,
 } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import getIpAddress, { getLocation } from "@/lib/getIP";
-const ip = await getIpAddress();
-const location = await getLocation(ip);
+
 
 export default function LetConnect({ name, emailAddress }) {
+  const [location, setLocation] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const ip = await getIpAddress();
+      const location = await getLocation(ip);
+      setLocation(location);
+    }
+    fetchData();
+  }, []);
   return (
     <div>
       <h2 className="text-4xl font-extrabold mb-6">
