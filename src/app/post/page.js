@@ -29,10 +29,10 @@ export default function PostMessage() {
                 alt="User Avatar"
               />
               <div>
-                <p className="font-semibold text-gray-900">Michael Chen</p>
-                <p className="text-sm text-gray-500">
-                  Lead Engineer • 1d • Edited
+                <p className="font-semibold text-gray-900">
+                  Areo Ayomide Philip
                 </p>
+                <p className="text-sm text-gray-500">Frontend Developer</p>
               </div>
             </div>
             <button className="text-gray-400 hover:text-black">
