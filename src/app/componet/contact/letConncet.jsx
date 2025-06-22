@@ -40,7 +40,9 @@ export default function LetConnect({ name, emailAddress }) {
           </span>
           <div>
             <h3 className="text-lg font-semibold">Your Name:</h3>
-            <p className="text-white">{name === null ? "Thony Stone" : name}</p>
+            <p className="text-white">
+              {name === null || undefined ? "Thony Stone" : name}
+            </p>
           </div>
         </div>
 
