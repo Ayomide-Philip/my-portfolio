@@ -19,7 +19,7 @@ const navItems = [
     ),
   },
   {
-    href: "/#",
+    href: "/post",
     label: "Post",
     icon: (
       <path

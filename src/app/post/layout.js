@@ -5,5 +5,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <div className={`bg-gray-950`}>{children}</div>;
+  return <div className={`bg-gray-950 `}>{children}</div>;
 }
