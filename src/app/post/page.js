@@ -10,7 +10,12 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import post from "@/lib/post";
-
+function sendLink() {
+  const pageLocation = window.location.href;
+  const message = `Check out Areo Ayomide Post at ${pageLocation}`;
+  const whatsappMessage = `whatsapp://send?text?${encodeURIComponent(message)}`;
+  window.open(whatsappMessage);
+}
 export default function PostMessage() {
   return (
     <section className="bg-gray-900 flex flex-col items-center justify-center px-4 pb-16 pt-4 min-h-screen">
@@ -117,18 +122,19 @@ export default function PostMessage() {
                 </span>
               </div>
 
-              <div className="border-t pt-3 flex justify-between gap-2 text-gray-700 text-sm">
+              <div className="border-t pt-3 flex justify-between gap-2 text-black text-sm">
                 {[
                   { icon: <FaThumbsUp />, label: "Like" },
                   { icon: <FaCommentAlt />, label: "Comment" },
-                  { icon: <FaPaperPlane />, label: "Send" },
-                ].map((item, index) => (
+                  { icon: <FaPaperPlane />, label: "Send", btnfun: sendLink },
+                ].map(({ icon, label, btnfun }, index) => (
                   <button
                     key={index}
                     className="flex items-center justify-center gap-2 py-2 w-full rounded-md hover:bg-gray-100 transition"
+                    onClick={btnfun}
                   >
-                    {item.icon}
-                    <span>{item.label}</span>
+                    {icon}
+                    <span>{label}</span>
                   </button>
                 ))}
               </div>
