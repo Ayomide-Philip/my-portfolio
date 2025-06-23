@@ -60,7 +60,7 @@ const itemVariants = {
 export default function AboutPage() {
   return (
     <motion.section
-      className="min-h-screen px-6 py-20 bg-black text-white font-mono"
+      className="min-h-screen px-6 py-20  text-white font-mono"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
