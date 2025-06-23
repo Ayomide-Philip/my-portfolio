@@ -13,7 +13,7 @@ import post from "@/lib/post";
 
 export default function PostMessage() {
   return (
-    <section className="bg-gray-900 flex flex-col items-center justify-center px-4 py-16 min-h-screen">
+    <section className="bg-gray-900 flex flex-col items-center justify-center px-4 pb-16 pt-4 min-h-screen">
       <h2 className="text-4xl font-bold text-white mb-8">Latest Posts</h2>
       {post.map(
         ({
