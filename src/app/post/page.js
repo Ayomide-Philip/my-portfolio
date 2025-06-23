@@ -89,7 +89,7 @@ export default function PostMessage() {
                       hidden: { opacity: 0, y: 5 },
                       visible: { opacity: 1, y: 0 },
                     }}
-                    className="rounded-full bg-orange-500/90 hover:bg-orange-600 px-3 py-1 text-xs font-medium text-white transition"
+                    className="rounded-full bg-orange-500/90 hover:bg-orange-600 hover:cursor-pointer px-3 py-1 text-xs font-medium text-white transition"
                   >
                     #{t}
                   </motion.span>
