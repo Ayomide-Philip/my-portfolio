@@ -12,7 +12,6 @@ import {
 import { useEffect, useState } from "react";
 import getIpAddress, { getLocation } from "@/lib/getIP";
 
-
 export default function LetConnect({ name, emailAddress }) {
   const [location, setLocation] = useState([]);
   useEffect(() => {
@@ -39,7 +38,11 @@ export default function LetConnect({ name, emailAddress }) {
           </span>
           <div>
             <h3 className="text-lg font-semibold">Your Location:</h3>
-            <p className="text-white">{`${location.city}, ${location.region}, ${location.country}.`}</p>
+            <p className="text-white">
+              {location
+                ? `${location?.city}, ${location?.region}, ${location?.country}.`
+                : "Unable to find Your location"}
+            </p>
           </div>
         </div>
 
