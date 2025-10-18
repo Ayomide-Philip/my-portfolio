@@ -1,3 +1,4 @@
+"use client";
 import SkillImage from "./skillImage";
 import { motion } from "framer-motion";
 
@@ -8,7 +9,7 @@ const containerVariants = {
     transition: {
       duration: 1,
       when: "beforeChildren",
-      staggerChildren: 0.3, 
+      staggerChildren: 0.3,
     },
   },
 };
