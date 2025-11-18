@@ -6,7 +6,7 @@ export const metadata = {
     default: "Areo Ayomide Philip | Home",
   },
   description:
-    "Home page of my portfolio where you would see details about me, what i can do and which frame work i can use",
+    "Home page of my portfolio where you would see details about me, what i can do and which framework i can use",
 };
 
 export default function RootLayout({ children }) {
